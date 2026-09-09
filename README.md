@@ -28,6 +28,20 @@ Orbit answers that question differently: **closeness is live, not stored.**
 | **Launch a Spark** | New post | Minimal composer; posting animates your idea launching directly into the galaxy |
 | **Discover** | Explore/algorithm feed | A live "gravity leaderboard" of what has genuine attention right now, not what's engineered to go viral |
 
+
+### Navigation & User Flow
+
+Orbit provides a consistent navigation experience across its core screens:
+
+* **Galaxy** — central live constellation experience
+* **Discover** — explore Sparks receiving attention
+* **Launch** — create and launch a new Spark
+* **Your Sky** — view personal relationship gravity
+* **How Orbit Works** — understand the gravity-based interaction model
+
+The persistent TopBar provides quick access to the main Orbit experiences, while the Galaxy also provides a direct Launch action. The application uses React Router for client-side navigation and deep-linked routes.
+
+
 ## Why This Isn't Just a Reskin
 
 Every core interaction model was rebuilt around the gravity concept, not visually restyled from an existing pattern:
