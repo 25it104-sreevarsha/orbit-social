@@ -98,8 +98,17 @@ export default function OrbitRoom() {
 
   if (!spark || !author) {
     return (
-      <div className="min-h-screen bg-space-950 flex items-center justify-center">
-        <p className="text-slate-400">Spark not found.</p>
+      <div className="min-h-screen bg-space-950 flex flex-col items-center justify-center gap-4 px-4">
+        <p className="text-slate-400 text-center">This spark has drifted out of orbit.</p>
+        <button
+          type="button"
+          onClick={() => navigate('/galaxy')}
+          className="px-6 py-3 rounded-full text-white font-medium shadow-lg flex items-center gap-2 focus-visible:outline-2 focus-visible:outline-offset-2"
+          style={{ background: 'linear-gradient(135deg, #8B5CF6 0%, #EC4899 50%, #22D3EE 100%)' }}
+        >
+          <ArrowLeft className="w-5 h-5" />
+          Back to Galaxy
+        </button>
       </div>
     );
   }

@@ -21,7 +21,7 @@ export default function AvatarOrbit({ size = 44, onClick, ariaLabel }: AvatarOrb
       type="button"
       onClick={onClick}
       aria-label={ariaLabel ?? 'Your Sky'}
-      className="relative flex items-center justify-center rounded-full bg-space-800 border border-space-600 hover:border-accent-violet/50 transition-colors"
+      className="relative flex items-center justify-center rounded-full bg-space-800 border border-space-600 hover:border-accent-violet/50 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2"
       style={{ width: size, height: size }}
     >
       <div
